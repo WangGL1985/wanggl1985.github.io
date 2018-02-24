@@ -49,7 +49,7 @@ Shadowsocks 有好几种安装方式：
 
 # Install aria2c
 
-aria2c 还可以加速 pan.baidu.com 上的资源，感兴趣的可以 google 一下。
+<!-- aria2c 还可以加速 pan.baidu.com 上的资源，感兴趣的可以 google 一下。 -->
 
 安装参考： [https://github.com/aria2/aria2](https://github.com/aria2/aria2)
 
