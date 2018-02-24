@@ -98,3 +98,10 @@ passage_end_tag:
   enabled: true
 
 display_updated: true
+
+#hexo sitemap
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml
+
