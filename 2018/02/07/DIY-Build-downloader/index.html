@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="手头有有一个 ci20，感兴趣的可参考 MIPS开发板的“不二”选择——Creator Ci20单板计算机评测 , MIPS开发板的“不二”选择——Creator Ci20单板计算机评测这个东西类似于树莓派，其流行度和社区支持远没有树莓派好, 其母公司已经被中国厂商收购了。但是这东西的可玩性还是很不错的，先配置一个下载机玩吧，主要是用来下载 youtube 上的视频的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="家用工具 DIY 一 下载机">
+<meta property="og:url" content="http://wanggl1985.github.io/2018/02/07/DIY-Build-downloader/index.html">
+<meta property="og:site_name" content="Guoliang&#39;s Tribe">
+<meta property="og:description" content="手头有有一个 ci20，感兴趣的可参考 MIPS开发板的“不二”选择——Creator Ci20单板计算机评测 , MIPS开发板的“不二”选择——Creator Ci20单板计算机评测这个东西类似于树莓派，其流行度和社区支持远没有树莓派好, 其母公司已经被中国厂商收购了。但是这东西的可玩性还是很不错的，先配置一个下载机玩吧，主要是用来下载 youtube 上的视频的。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-02-07T05:36:23.879Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="家用工具 DIY 一 下载机">
+<meta name="twitter:description" content="手头有有一个 ci20，感兴趣的可参考 MIPS开发板的“不二”选择——Creator Ci20单板计算机评测 , MIPS开发板的“不二”选择——Creator Ci20单板计算机评测这个东西类似于树莓派，其流行度和社区支持远没有树莓派好, 其母公司已经被中国厂商收购了。但是这东西的可玩性还是很不错的，先配置一个下载机玩吧，主要是用来下载 youtube 上的视频的。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://wanggl1985.github.io/2018/02/07/DIY-Build-downloader/"/>
+
+
+
+
+
+  <title>家用工具 DIY 一 下载机 | Guoliang's Tribe</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Guoliang's Tribe</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">重新上路，大不了大器晚成</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', '9WZ9s6MSVEzryz7y3bh2','2.0.0');
+</script>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://wanggl1985.github.io/2018/02/07/DIY-Build-downloader/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="王国梁">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Guoliang's Tribe">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">家用工具 DIY 一 下载机</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-07T11:30:08+08:00">
+                2018-02-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>手头有有一个 ci20，感兴趣的可参考 <a href="http://imgtec.eetrend.com/news/9084" target="_blank" rel="noopener">MIPS开发板的“不二”选择——Creator Ci20单板计算机评测</a> , <a href="http://www.cnblogs.com/findumars/p/6794403.html" target="_blank" rel="noopener">MIPS开发板的“不二”选择——Creator Ci20单板计算机评测</a>这个东西类似于树莓派，其流行度和社区支持远没有树莓派好, 其母公司已经被中国厂商收购了。但是这东西的可玩性还是很不错的，先配置一个下载机玩吧，主要是用来下载 youtube 上的视频的。</p>
+<a id="more"></a>
+<h1 id="Showsocks-on-server-及-BBR-加速"><a href="#Showsocks-on-server-及-BBR-加速" class="headerlink" title="Showsocks on server 及 BBR 加速"></a>Showsocks on server 及 BBR 加速</h1><p>我参考的文章如下：</p>
+<ul>
+<li><a href="https://quericy.me/blog/495/" target="_blank" rel="noopener">各平台vps快速搭建shadowsocks及优化总结</a></li>
+<li><a href="http://www.bawagon.com/openvz-google-bbr/" target="_blank" rel="noopener">搬瓦工OpenVZ 平台 Google BBR 一键安装脚本</a>, 如果你也用 bwh， 请注意的对应的平台。</li>
+<li><p><a href="http://blog.csdn.net/lcg0412/article/details/45009113" target="_blank" rel="noopener">在Ubuntu OS的VPS上架设Shadowsock服务器端</a></p>
+</li>
+<li><p><a href="https://www.iwwenbo.com/0-1-shadowsocks-start/" target="_blank" rel="noopener">从零开始：史上最详尽Shadowsocks搭建教程</a></p>
+</li>
+</ul>
+<p>参考已上内容，应该可以配置成功的。</p>
+<h1 id="Install-shadowsocks"><a href="#Install-shadowsocks" class="headerlink" title="Install shadowsocks"></a>Install shadowsocks</h1><p>Shadowsocks 有好几种安装方式：</p>
+<ul>
+<li>使用 pip 安装</li>
+<li>带 GUI 的shadowsocks-qt5</li>
+<li>showsocks-libenv</li>
+</ul>
+<blockquote>
+<p>如果你用系统是 Debain， 请先更换国内的源，可参考 <a href="https://yorkchou.com/debian-8-mirror.html" target="_blank" rel="noopener">告别缓慢为 Debian 8 Jessie 更换国内的源</a> 或者 <a href="https://www.zzxworld.com/blogs/use-cn-mirror-for-debian.html" target="_blank" rel="noopener">使用国内的 Debian 源和镜像</a></p>
+</blockquote>
+<p>下载机需要在<strong>终端使用代理</strong>，而且平时都是通过 ssh 远程登陆使用的。安装过程可参考: <a href="https://www.cnblogs.com/Dumblidor/p/5450248.html" target="_blank" rel="noopener">Ubuntu下ss的安装与使用</a>, 配置代理模式之后的内容无需参考。</p>
+<blockquote>
+<p>sslocal 启动如果报 undefined symbol: EVP_CIPHER_CTX_cleanup 错误，参阅  <a href="http://blog.csdn.net/blackfrog_unique/article/details/60320737" target="_blank" rel="noopener">Kali2.0 update到最新版本后安装shadowsocks服务报错问题</a></p>
+</blockquote>
+<p>参考 <a href="https://www.zybuluo.com/aliasliyu4/note/561047" target="_blank" rel="noopener">如何在mac上使用polipo将socks5转换成http</a> 将 socks5 转成 http。</p>
+<h1 id="Install-youtube-dl"><a href="#Install-youtube-dl" class="headerlink" title="Install youtube-dl"></a>Install youtube-dl</h1><p>详见 <a href="https://github.com/rg3/youtube-dl/blob/master/README.md#readme" target="_blank" rel="noopener">https://github.com/rg3/youtube-dl/blob/master/README.md#readme</a></p>
+<ul>
+<li>youtube-dl –download-archive archive.txt “URL”  下载当前页面下的所有视频</li>
+<li>youtube-dl –yes-playlist -f bestvideo+bestaudio -playlist-start NUMBER “URL”  下载列表下的视频</li>
+</ul>
+<p>有一个问题是直接用上述命令下载时速度较慢，可以使用 aria2c 实现并行。</p>
+<h1 id="Install-aria2c"><a href="#Install-aria2c" class="headerlink" title="Install aria2c"></a>Install aria2c</h1><p>aria2c 还可以加速 pan.baidu.com 上的资源，感兴趣的可以 google 一下。</p>
+<p>安装参考： <a href="https://github.com/aria2/aria2" target="_blank" rel="noopener">https://github.com/aria2/aria2</a></p>
+<p>并行加速参考 <a href="https://github.com/rg3/youtube-dl/issues/350#issuecomment-256621096" target="_blank" rel="noopener">https://github.com/rg3/youtube-dl/issues/350#issuecomment-256621096</a></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/01/28/libgtk-3-bin-or-libgtk-3-common-error-connot-install-any-packages/" rel="next" title="libgtk-3-bin or libgtk-3-common error connot install any packages">
+                <i class="fa fa-chevron-left"></i> libgtk-3-bin or libgtk-3-common error connot install any packages
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">王国梁</p>
+              <p class="site-description motion-element" itemprop="description">时间不多了...</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+            <div class="cc-license motion-element" itemprop="license">
+              <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+                <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+              </a>
+            </div>
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Showsocks-on-server-及-BBR-加速"><span class="nav-number">1.</span> <span class="nav-text">Showsocks on server 及 BBR 加速</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install-shadowsocks"><span class="nav-number">2.</span> <span class="nav-text">Install shadowsocks</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install-youtube-dl"><span class="nav-number">3.</span> <span class="nav-text">Install youtube-dl</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Install-aria2c"><span class="nav-number">4.</span> <span class="nav-text">Install aria2c</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">王国梁</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
