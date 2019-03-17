@@ -5,7 +5,7 @@ all: deploy commit
 deploy:
 	hexo clean
 	hexo g && gulp
-	cd public; touch CNAME; echo "ccwangguoliang.com" > CNAME
+	#cd public; touch CNAME; echo "ccwangguoliang.com" > CNAME
 	hexo d
 
 
