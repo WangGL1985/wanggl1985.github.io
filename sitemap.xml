@@ -2,6 +2,335 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wanggl1985.github.io/2016/08/01/effcpp3d-2016-08-01-Item-50-Understand-when-it-makes-sense-to-replace-new-and-delete/</loc>
+    
+    <lastmod>2018-03-10T09:54:33.218Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/15/effcpp3d-2016-07-15-Item-49-understand-the-behavior-of-the-new-handler/</loc>
+    
+    <lastmod>2018-03-10T09:41:59.993Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/22/effcpp3d-2016-07-22-Item-44-factor-parameter-independent-code-out-of-template/</loc>
+    
+    <lastmod>2018-03-09T07:50:34.957Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/20/effcpp3d-2016-07-20-Item-42-understand-the-two-meaning-of-typename/</loc>
+    
+    <lastmod>2018-03-09T07:49:29.359Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/21/effcpp3d-2016-07-21-Item-43-know-how-to-access-names-in-templatized-base-classes/</loc>
+    
+    <lastmod>2018-03-09T07:49:25.145Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/19/effcpp3d-2016-07-19-Item-41-understand-implicit-interfaces-and-compile-time-polymorphism/</loc>
+    
+    <lastmod>2018-03-09T07:24:47.805Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/20/effcpp3d-2016-12-26-Item-40-use-multiple-inheritance-judiciously/</loc>
+    
+    <lastmod>2018-03-09T06:17:31.390Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/18/effcpp3d-2016-07-18-Item-39-use-private-inheritance-judiciously/</loc>
+    
+    <lastmod>2018-03-09T04:10:28.440Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/17/effcpp3d-2016-07-17-Item-38-model-has-a-or-is-implemented-in-terms-of-through-composition/</loc>
+    
+    <lastmod>2018-03-09T03:53:28.204Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/16/effcpp3d-2016-07-16-Item-37-%E7%BB%9D%E4%B8%8D%E9%87%8D%E6%96%B0%E5%AE%9A%E4%B9%89%E7%BB%A7%E6%89%BF%E8%80%8C%E6%9D%A5%E7%9A%84%E7%BC%BA%E7%9C%81%E5%8F%82%E6%95%B0%E5%80%BC/</loc>
+    
+    <lastmod>2018-03-09T03:52:10.138Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/15/effcpp3d-2016-07-15-Item-36-never-redefine-an-inherited-non-virtual-function/</loc>
+    
+    <lastmod>2018-03-09T03:11:33.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/15/effcpp3d-2016-07-15-Item-35-consider-alternatives-to-virtual-functions/</loc>
+    
+    <lastmod>2018-03-09T02:56:08.346Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/14/effcpp3d-2016-07-14-Item-34-differentiate-between-inheritance-of-interface-and-inheritance-of-implementation/</loc>
+    
+    <lastmod>2018-03-09T02:53:02.455Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/13/effcpp3d-2016-07-13-Item-33-avoid-hiding-inherited-names/</loc>
+    
+    <lastmod>2018-03-09T02:17:28.514Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/12/effcpp3d-2016-07-12-Item-32-make-sure-public-inheritabce-models-is-a/</loc>
+    
+    <lastmod>2018-03-09T01:55:17.421Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/10/effcpp3d-2016-07-11-Item-31-minimize-compilation-dependencies-between-files/</loc>
+    
+    <lastmod>2018-03-08T08:36:55.891Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/10/effcpp3d-2016-07-10-Item-30-understand-the-ins-and-outs-of-inlining/</loc>
+    
+    <lastmod>2018-03-08T08:35:37.600Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/09/effcpp3d-2016-07-09-Item-29-strive-for-exception-safe-code/</loc>
+    
+    <lastmod>2018-03-08T08:32:15.361Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/06/effcpp3d-2016-07-08-Item-28-avoid-return-handles-to-object-internels/</loc>
+    
+    <lastmod>2018-03-08T05:59:10.926Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/07/effcpp3d-2016-07-07-Item-27-minimize-casting/</loc>
+    
+    <lastmod>2018-03-08T05:00:46.974Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/06/effcpp3d-2016-07-06-item-26-postpone-variable-definitions-as-long-as-possible/</loc>
+    
+    <lastmod>2018-03-08T05:00:28.483Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/08/effcpp3d-2016-07-06-Item-25-consider-support-for-a-non-throwing-swap/</loc>
+    
+    <lastmod>2018-03-08T04:46:59.691Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/06/effcpp3d-2016-07-06-Item-24-declare-non-member-functions-when-type-conversions-should-apply-to-all-parameters/</loc>
+    
+    <lastmod>2018-03-08T02:14:48.704Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/05/effcpp3d-2016-07-05-Item-23-prefer-non-member-non-friend-functions-to-member-functions/</loc>
+    
+    <lastmod>2018-03-08T02:00:20.589Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/24/effcpp3d-2016-05-24-Item-22-declear-data-member-private/</loc>
+    
+    <lastmod>2018-03-08T01:43:19.719Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/23/effcpp3d-2016-05-23-Item-21-do-try-to-return-a-reference-when-you-must-return-an-object/</loc>
+    
+    <lastmod>2018-03-08T01:39:32.660Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/20/effcpp3d-2016-05-22-Item-20-Prefer-pass-by-reference-const-to-const-to-pass-by-value/</loc>
+    
+    <lastmod>2018-03-07T15:08:53.198Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/20/effcpp3d-2016-05-20-Item-19-treat-class-design-as-type-design/</loc>
+    
+    <lastmod>2018-03-07T08:52:31.963Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/15/effcpp3d-2016-05-18-Item-18-make-interfaces-easy-to-use-correctly-and-hard-to-use-incorrectly/</loc>
+    
+    <lastmod>2018-03-07T08:50:45.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/13/effcpp3d-2016-05-13-Item-17-store-newed-objects-in-smart-pointers-in-standalone-statements/</loc>
+    
+    <lastmod>2018-03-07T08:49:26.417Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/12/effcpp3d-2016-05-12-Item-16-use-the-same-from-in-corresponding-uses-of-new-and-delete/</loc>
+    
+    <lastmod>2018-03-07T08:42:26.255Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/11/effcpp3d-2016-05-11-Item-15-provide-access-to-raw-resources-in-resources-managing-classes/</loc>
+    
+    <lastmod>2018-03-07T08:38:27.974Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/09/effcpp3d-2016-05-09-Item-14-think-carefully-about-copying-behaving-in-resource-managing-classes/</loc>
+    
+    <lastmod>2018-03-07T08:20:56.002Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/07/effcpp3d-2016-05-07-Item-13-use-objects-to-manage-resources/</loc>
+    
+    <lastmod>2018-03-07T07:31:53.646Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/06/effcpp3d-2016-05-06-Item-12-copy-all-parts-of-an-object/</loc>
+    
+    <lastmod>2018-03-07T06:40:12.100Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/04/effcpp3d-2016-05-04-Item-11-handle-assignment-to-self-in-operator/</loc>
+    
+    <lastmod>2018-03-07T05:57:14.688Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/02/effcpp3d-2016-05-02-Item-09-never-call-virtual-functions-during-construction-or-destruction/</loc>
+    
+    <lastmod>2018-03-07T05:56:28.650Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/04/29/effcpp3d-2016-04-29-Item-06-explicity-disallow-the-use-of-compiler-generated-functions-you-do-not-want/</loc>
+    
+    <lastmod>2018-03-07T05:55:29.357Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/04/29/effcpp3d-2016-04-29-Item-07-declare-destructors-virtual-in-polymorphic-base-classes/</loc>
+    
+    <lastmod>2018-03-07T05:49:05.227Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/01/effcpp3d-2016-05-01-Item-08-prevent-exeception-from-leaving-destructors/</loc>
+    
+    <lastmod>2018-03-07T05:49:03.344Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/05/03/effcpp3d-2016-05-03-Item-10-have-assignment-operators-return-a-reference-to-this/</loc>
+    
+    <lastmod>2018-03-07T05:30:57.845Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/04/27/effcpp3d-2016-04-27-Item-04-%E7%A1%AE%E5%AE%9A%E5%AF%B9%E8%B1%A1%E8%A2%AB%E4%BD%BF%E7%94%A8%E5%89%8D%E5%B7%B2%E5%85%88%E8%A2%AB%E5%88%9D%E5%A7%8B%E5%8C%96/</loc>
+    
+    <lastmod>2018-03-06T13:59:23.372Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2015/10/27/effcpp3d-2015-10-27-Item-03-%E5%B0%BD%E5%8F%AF%E8%83%BD%E4%BD%BF%E7%94%A8-const/</loc>
+    
+    <lastmod>2018-03-06T09:37:16.129Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2015/10/10/effcpp3d-2015-10-10-Item-02-prefer-consts-enums-and-inlines-to-define/</loc>
+    
+    <lastmod>2018-03-06T08:19:01.689Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/04/effcpp3d-2015-07-04-Item-01-view-c-as-a-federation-of-languages/</loc>
+    
+    <lastmod>2018-03-06T06:35:03.996Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2015/07/01/effcpp3d-2015-07-01-c-%E5%AF%BC%E8%AF%BB/</loc>
+    
+    <lastmod>2018-03-06T06:17:13.543Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2018/03/05/Install-KODI-for-IOS/</loc>
+    
+    <lastmod>2018-03-05T07:21:37.233Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://wanggl1985.github.io/2018/02/07/DIY-Build-downloader/</loc>
     
     <lastmod>2018-02-24T08:38:11.094Z</lastmod>
@@ -19,6 +348,41 @@
     <loc>http://wanggl1985.github.io/2017/12/23/%E6%B5%81%E7%95%85%E7%9A%84-Shell/</loc>
     
     <lastmod>2018-01-22T03:58:31.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/04/28/effcpp3d-2016-04-28-Item-05-%E4%BA%86%E8%A7%A3-C-%E9%BB%98%E9%BB%98%E7%BC%96%E5%86%99%E5%B9%B6%E8%B0%83%E7%94%A8%E5%93%AA%E4%BA%9B%E5%87%BD%E6%95%B0/</loc>
+    
+    <lastmod>2017-07-15T12:53:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/08/effcpp3d-2016-07-08-Item-45-use-member-function-templates-to-accept-all-compatible-types/</loc>
+    
+    <lastmod>2016-12-31T01:55:35.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/08/effcpp3d-2016-07-08-Item-46-define-non-member-functions-inside-template-when-type-conversions-are-desired/</loc>
+    
+    <lastmod>2016-12-28T15:38:07.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/07/effcpp3d-2016-07-07-Item-53-%E4%B8%8D%E8%A6%81%E8%BD%BB%E5%BF%BD%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E8%AD%A6%E5%91%8A/</loc>
+    
+    <lastmod>2016-07-09T08:25:05.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wanggl1985.github.io/2016/07/07/effcpp3d-2016-07-07-Item-54-%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%86%9F%E6%82%89%E5%8C%85%E6%8B%AC-TR1-%E5%9C%A8%E5%86%85%E7%9A%84%E6%A0%87%E5%87%86%E7%A8%8B%E5%BA%8F%E5%BA%93/</loc>
+    
+    <lastmod>2016-07-09T08:25:05.000Z</lastmod>
     
   </url>
   
