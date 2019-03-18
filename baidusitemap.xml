@@ -4,6 +4,29 @@
 
     
   <url>
+    <loc>http://wanggl1985.github.io/2017/12/23/%E6%B5%81%E7%95%85%E7%9A%84-Shell/</loc>
+    <lastmod>2019-03-18T00:51:18.645Z</lastmod>
+    <data>
+        <display>
+        <title>流畅的 Shell</title>
+        <pubTime>2017-12-23T02:47:58.000Z</pubTime>
+        
+        <tag>shell</tag>
+         
+         
+           
+             
+              <breadCrumb title="tools" url="http://wanggl1985.github.io/categories/tools/"/>
+          
+             
+              <breadCrumb title="shell" url="http://wanggl1985.github.io/categories/tools/shell/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://wanggl1985.github.io/2016/08/01/effcpp3d-2016-08-01-Item-50-Understand-when-it-makes-sense-to-replace-new-and-delete/</loc>
     <lastmod>2018-03-10T09:54:33.218Z</lastmod>
     <data>
@@ -882,12 +905,12 @@
 
     
   <url>
-    <loc>http://wanggl1985.github.io/2016/07/07/effcpp3d-2016-07-07-Item-54-%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%86%9F%E6%82%89%E5%8C%85%E6%8B%AC-TR1-%E5%9C%A8%E5%86%85%E7%9A%84%E6%A0%87%E5%87%86%E7%A8%8B%E5%BA%8F%E5%BA%93/</loc>
+    <loc>http://wanggl1985.github.io/2016/07/07/effcpp3d-2016-07-07-Item-53-%E4%B8%8D%E8%A6%81%E8%BD%BB%E5%BF%BD%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E8%AD%A6%E5%91%8A/</loc>
     <lastmod>2016-07-09T08:25:05.000Z</lastmod>
     <data>
         <display>
-        <title>Item 54 让自己熟悉包括 TR1 在内的标准程序库</title>
-        <pubTime>2016-07-07T06:28:06.000Z</pubTime>
+        <title>Item 53 不要轻忽编译器的警告</title>
+        <pubTime>2016-07-07T06:23:45.000Z</pubTime>
         
         <tag>cpp</tag>
          
@@ -903,12 +926,12 @@
 
     
   <url>
-    <loc>http://wanggl1985.github.io/2016/07/07/effcpp3d-2016-07-07-Item-53-%E4%B8%8D%E8%A6%81%E8%BD%BB%E5%BF%BD%E7%BC%96%E8%AF%91%E5%99%A8%E7%9A%84%E8%AD%A6%E5%91%8A/</loc>
+    <loc>http://wanggl1985.github.io/2016/07/07/effcpp3d-2016-07-07-Item-54-%E8%AE%A9%E8%87%AA%E5%B7%B1%E7%86%9F%E6%82%89%E5%8C%85%E6%8B%AC-TR1-%E5%9C%A8%E5%86%85%E7%9A%84%E6%A0%87%E5%87%86%E7%A8%8B%E5%BA%8F%E5%BA%93/</loc>
     <lastmod>2016-07-09T08:25:05.000Z</lastmod>
     <data>
         <display>
-        <title>Item 53 不要轻忽编译器的警告</title>
-        <pubTime>2016-07-07T06:23:45.000Z</pubTime>
+        <title>Item 54 让自己熟悉包括 TR1 在内的标准程序库</title>
+        <pubTime>2016-07-07T06:28:06.000Z</pubTime>
         
         <tag>cpp</tag>
          
